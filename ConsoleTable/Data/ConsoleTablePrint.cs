@@ -20,7 +20,9 @@ namespace _ConsoleTable {
         }
 
         private uint CountLines {
-            get => (uint)_items.Count * 2 + 1;
+            get {
+                return _items.Count == 0 ? 0 : (uint)_items.Count * 2 + 1;
+            }
         }
         private uint LenghtTable {
             get {
@@ -59,11 +61,13 @@ namespace _ConsoleTable {
 
         public string PrintTable() {
             var builder = new System.Text.StringBuilder();
-            string append = " ";
+            string append = "";
             int iterator = 0;
 
             for(int i = 0; i < CountLines; i++) {
-                if(i % 2 != 0) {
+                append = "";
+
+                if(i % 2 == 0) {
                     append = FullString;
                 } else {
                     append += Border;                                       // |#|
@@ -74,7 +78,7 @@ namespace _ConsoleTable {
 
                     SpaceAt(ref append);                                    // |# some_value |
                     append += Border;                                       // |# some_value #|
-
+                    
                     iterator++;
                 }
 
