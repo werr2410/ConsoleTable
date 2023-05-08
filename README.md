@@ -2,6 +2,7 @@
 
 Quickly create table in console
 (Project have standart TableItem - class TableItem(extended with string)
+* Program.cs have some example
 
 ### Constructors:
 - standart
@@ -9,14 +10,14 @@ Quickly create table in console
 - const(List<ITableItem> items, char keyForExit)
 - const(ConsoleTable other)
   
-### Methods
+### Methods:
   * AppendItem(ITableItem item)
   * RemoveItem(ITableItem item)
   * RemoveItem(int index)
   * RemoveItem(int start, int end)
   * Clear()
   
-### Get Table
+### Get Table:
   * PrinTable()
   * (override ToString)
   
