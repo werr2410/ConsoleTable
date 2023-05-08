@@ -2,7 +2,10 @@
 
 Quickly create table in console
 (Project have standart TableItem - class TableItem(extended with string)
+
+### Tutorials
 * Program.cs have some example
+* Create wiki
 
 ### Constructors:
 - standart
