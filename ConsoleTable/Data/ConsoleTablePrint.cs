@@ -43,6 +43,7 @@ namespace _ConsoleTable {
             }
         }
 
+
         private string GetSpacesForLine(string Value) {
             string res = "";
 
@@ -73,6 +74,8 @@ namespace _ConsoleTable {
 
                     SpaceAt(ref append);                                    // |# some_value |
                     append += Border;                                       // |# some_value #|
+
+                    iterator++;
                 }
 
                 builder.AppendLine(append);
