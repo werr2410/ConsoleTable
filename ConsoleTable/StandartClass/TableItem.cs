@@ -1,5 +1,5 @@
 namespace _ConsoleTable {
-    class TableItem : ITableItem {
+    partial class TableItem : ITableItem {
         public string Value { get; set; } = "";
         
         public TableItem() {}
