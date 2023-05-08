@@ -1,7 +1,7 @@
 ## ConsoleTable
 
 Quickly create table in console
-
+(Project have standart TableItem - class TableItem(extended with string)
 
 ### Constructors:
 - standart
@@ -20,3 +20,4 @@ Quickly create table in console
   * PrinTable()
   * (override ToString)
   
+If you want create own table item extend your class with interface ITableItem
