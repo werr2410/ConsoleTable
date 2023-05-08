@@ -5,7 +5,7 @@ Quickly create table in console
 
 ### Tutorials
 * Program.cs have some example
-* Create wiki
+* Created wiki
 
 ### Constructors:
 - standart
