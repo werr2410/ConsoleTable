@@ -1,0 +1,5 @@
+bin/
+obj/
+
+Program.cs
+consoletable.csproj
