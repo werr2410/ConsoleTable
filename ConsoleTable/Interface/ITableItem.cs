@@ -1,5 +1,7 @@
 namespace _ConsoleTable {
     interface ITableItem {
-        protected uint LenghtItem();
+        string Value { get; set; }
+        
+        int LenghtItem() => Value.Length;
     }
 }
